@@ -1,0 +1,66 @@
+{
+  //-----------------------------------
+  // Basic Settings
+  "extensions.experimental.affinity": {
+    // run vim extension on a seperate process (performance)
+    "vscodevim.vim": 1
+  },
+
+  "vim.surround": true,
+  "vim.smartRelativeLine": true,
+
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.searchHighlightColor": "#f6ff0080",
+  "vim.searchHighlightTextColor": "#fff",
+
+  "vim.highlightedyank.enable": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<Esc>"],
+      "when": ["editorFocus"],
+      "commands": [":nohl"],
+      "silent": true
+    }
+  ],
+
+  "workbench.colorTheme": "One Dark Pro Mix",
+  "oneDarkPro.bold": true,
+  "oneDarkPro.vivid": true,
+
+  "editor.fontSize": 22,
+  "editor.lineHeight": 30,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+
+  "zenMode.hideStatusBar": false,
+  "editor.minimap.enabled": false,
+  "editor.mouseWheelZoom": true,
+  "editor.acceptSuggestionOnEnter": "off",
+
+  //-----------------------------------
+  // Language options
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": "/dist",
+      "savePathReplacementPairs": null
+    }
+  ],
+
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "html.format.contentUnformatted": "",
+  "workbench.iconTheme": "material-icon-theme",
+  "files.autoSave": "afterDelay"
+}
