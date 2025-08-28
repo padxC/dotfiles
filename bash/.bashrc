@@ -5,14 +5,11 @@
 set -o vi # vim mode
 
 ###==ALIAS==###
-#nvim
-alias nv="nvim"
 alias nv="~/.bin/nvim.appimage"
 
 #bash
-alias ls='ls -A' #list all including hidden
+alias ls='ls -A'
 alias ..="cd .."
-alias ...="cd ../.."
 
 #git
 alias gs='git status'
@@ -22,8 +19,6 @@ alias gp='git push'
 
 ###==COLORS==###
 alias ls="ls -a -hN --color=auto --group-directories-first"
-
-#alias grep="grep --color=auto" 
 alias grep='GREP_COLOR="1;33;40" LANG=C grep --color=auto' # color grep - highlight desired sequence
 
 ###==PROMPTS==###
