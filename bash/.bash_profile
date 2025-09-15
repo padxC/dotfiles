@@ -1,5 +1,6 @@
 # global
 
+export EDITOR='vim'
 export LS_COLORS=$LS_COLORS:'ow=36:' # fix the color mismatch when do ls command in windows
 export TERM=xterm-256color #tmux
 

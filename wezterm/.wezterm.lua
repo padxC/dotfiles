@@ -23,7 +23,7 @@ return {
 	font_size = 14,
 	line_height = 1.11,
 
-	color_scheme = "Gruvbox Dark",
+	color_scheme = "darkmoss (base16)",
 	colors = {
 		cursor_bg = "white", -- Bright yellow
 		cursor_fg = "black", -- Text color under cursor
