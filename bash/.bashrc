@@ -1,20 +1,16 @@
 #!/bin/bash
-#---ba$hrc
 
-###==VIM==###
-set -o vi # vim mode
-
-###==ALIAS==###
+###=================###
+set -o vi
 alias nv="nvim"
 
 ###==COLORS==###
+eval "$(dircolors -b)"
 alias ls="ls --color=auto"
-alias grep='GREP_COLOR="1;33;40" LANG=C grep --color=auto' # color grep - highlight desired sequence
+export LS_COLORS="${LS_COLORS:+$LS_COLORS:}ow=36:"
+
+export GREP_COLORS="mt=1;33:fn=35:ln=32"
+alias grep='grep --color=auto' # grep highlight
 
 ###==PROMPTS==###
 export PS1="\[\e[38;5;214m\]\w\[\e[0m\]⌝ ˛≭➤➤  "
-# export PS1="WTF\[\e[31m\] \[\e[m\]\[\e[31m\]:\[\e[m\]\[\e[31m\]:\[\e[m\] \[\e[32m\]\w\[\e[m\] \[\e[34m\]»\[\e[m\] "
-###==FZF==###
-
-###=================###
-
