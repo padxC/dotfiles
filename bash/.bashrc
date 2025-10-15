@@ -1,7 +1,6 @@
 #!/bin/bash
 
 ###=================###
-set -o vi
 alias nv="nvim"
 
 ###==COLORS==###

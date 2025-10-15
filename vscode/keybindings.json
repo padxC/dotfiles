@@ -1,4 +1,3 @@
-// Place your key bindings in this file to override the defaults
 [
   //---------------------------------
   {
@@ -18,8 +17,8 @@
     "key": "ctrl-j",
     "command": "workbench.action.navigateDown"
   },
+  //---------------------------------
   {
-    //Tab
     "key": "g+t",
     "command": "workbench.action.nextEditorInGroup",
     "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
@@ -29,7 +28,7 @@
     "command": "workbench.action.previousEditorInGroup",
     "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
   },
-
+  //---------------------------------
   {
     // Explorer
     "key": "space e",
@@ -53,14 +52,7 @@
     },
     "when": "sideBarFocus && !inputFocus"
   },
-
-  {
-    // Open panel
-    "key": "space shift-t s",
-    "command": "workbench.action.terminal.toggleTerminal",
-    "when": "vim.mode == 'Normal' && editorTextFocus"
-  },
-
+  //---------------------------------
   {
     // Editing
     "key": "shift-j",
@@ -72,35 +64,36 @@
     "command": "editor.action.moveLinesUpAction",
     "when": "vim.mode == 'VisualLine' && editorTextFocus"
   },
-
+  //---------------------------------
   {
     // Coding
     "key": "shift-k",
     "command": "editor.action.showHover",
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
+
   {
     "key": "space g d",
     "command": "editor.action.revealDefinition",
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
   {
-    "key": "space g r",
+    "key": "g r r",
     "command": "editor.action.goToReferences",
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
   {
-    "key": "space g i",
+    "key": "g r i",
     "command": "editor.action.goToImplementation",
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
   {
-    "key": "space c a",
+    "key": "g r a",
     "command": "editor.action.codeAction",
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
   {
-    "key": "space r n",
+    "key": "g r n",
     "command": "editor.action.rename",
     "when": "vim.mode == 'Normal' && editorTextFocus && editorHasRenameProvider && !editorReadonly"
   },
@@ -109,6 +102,7 @@
     "command": "workbench.action.quickOpen",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
+  //---------------------------------
   {
     // Go to [D]ianostic
     "key": "[ d",
@@ -120,14 +114,13 @@
     "command": "editor.action.marker.next",
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
-
   {
     // [E]scape
     "key": "escape",
     "command": "closeMarkersNavigation",
     "when": "editorFocus && markersNavigationVisible"
   },
-
+  //---------------------------------
   {
     // Harpoon extension
     "key": "space h a",
@@ -160,15 +153,11 @@
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
 
+  //---------------------------------
   {
     // [N]ext && [P]revious
     "key": "ctrl-n",
     "command": "quickInput.next",
-    "when": "inQuickInput && quickInputType == 'quickPick'"
-  },
-  {
-    "key": "ctrl-p",
-    "command": "quickInput.previous",
     "when": "inQuickInput && quickInputType == 'quickPick'"
   },
   {
@@ -178,10 +167,14 @@
   },
   {
     "key": "ctrl-p",
+    "command": "quickInput.previous",
+    "when": "inQuickInput && quickInputType == 'quickPick'"
+  },
+  {
+    "key": "ctrl-p",
     "command": "editor.action.addSelectionToPreviousFindMatch",
     "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
   },
-
   {
     // [Y]es
     "key": "ctrl+y",
@@ -207,7 +200,6 @@
     "command": "editor.action.accessibleViewAcceptInlineCompletion",
     "when": "accessibleViewIsShown && accessibleViewCurrentProviderId == 'inlineCompletions'"
   },
-
   {
     "key": "ctrl+y",
     "command": "acceptSelectedSuggestion",
@@ -229,6 +221,7 @@
     "when": "hasOtherSuggestions && textInputFocus && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion == 'on'"
   },
 
+  //---------------------------------
   {
     // Toggle View
     "key": "ctrl+/",

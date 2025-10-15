@@ -1,6 +1,5 @@
 {
   //-----------------------------------
-  // Basic Settings
   "extensions.experimental.affinity": {
     // run vim extension on a seperate process (performance)
     "vscodevim.vim": 1
@@ -59,8 +58,9 @@
     "editor.defaultFormatter": "vscode.css-language-features"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
   "html.format.contentUnformatted": "",
   "workbench.iconTheme": "material-icon-theme",
+
+  "editor.formatOnSave": true,
   "files.autoSave": "afterDelay"
 }
