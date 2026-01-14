@@ -2,12 +2,12 @@ local wezterm = require("wezterm")
 
 return {
 	-- default_prog = { "wsl.exe" },
-  max_fps = 60,
+  	max_fps = 60,
 	enable_wayland = false, -- Better mouse support on Windows
 
 	automatically_reload_config = true,
 	hide_tab_bar_if_only_one_tab = true,
-  hide_mouse_cursor_when_typing = true,
+	hide_mouse_cursor_when_typing = true,
 
 	--window_decorations = "NONE",
 	window_close_confirmation = "NeverPrompt",
@@ -29,9 +29,9 @@ return {
 		cursor_fg = "black", -- Text color under cursor
 		cursor_border = "white", -- Matches BG for solid look
 	},
-	default_cursor_style = "BlinkingUnderline", -- Animated line
-	cursor_blink_rate = 650, -- Blink every 500ms (adjust speed)
-	cursor_blink_ease_in = "EaseOut", -- Smooth fade animation
+	-- default_cursor_style = "BlinkingUnderline", -- Animated line
+	-- ursor_blink_rate = 650, -- Blink every 500ms (adjust speed)
+	-- cursor_blink_ease_in = "EaseOut", -- Smooth fade animation
 
 	mouse_bindings = { -- Ctrl + Click to open link
 		{

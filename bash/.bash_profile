@@ -15,3 +15,7 @@ shopt -s histappend # append to history, don't overwrite it
 if [ -f ~/.bashrc ]; then # source bash
     . ~/.bashrc
 fi
+
+# Created by `pipx` on 2025-11-19 04:15:08
+export PATH="$PATH:/home/keo/.local/bin"
+export PATH="$HOME/develop/flutter/bin:$PATH"

@@ -31,6 +31,7 @@ string S;
 
 
 void solve() {
+
 }
 
 
