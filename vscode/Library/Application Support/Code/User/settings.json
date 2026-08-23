@@ -1,0 +1,69 @@
+{
+  "oneDarkPro.bold": true,
+  "oneDarkPro.vivid": true,
+  "workbench.colorTheme": "One Dark Pro Mix",
+
+  "editor.fontSize": 22,
+  "editor.lineHeight": 30,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Fira Code",
+
+  "editor.minimap.enabled": false,
+  "editor.smoothScrolling": false,
+  "editor.lineNumbers": "relative",
+  "editor.mouseWheelZoom": true,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.suggest.insertMode": "insert",
+
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.showTabs": "none",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  "terminal.integrated.shellIntegration.enabled": false,
+  "terminal.integrated.enablePersistentSessions": false,
+
+  "vscode-neovim.afterInitConfig": [
+    "set clipboard=unnamedplus",
+    "set ignorecase",      // Ignore case when searching
+    "set smartcase",       // Override ignorecase if search contains uppercase
+    "vnoremap > >gv",
+    "vnoremap < <gv",
+    "vnoremap K :m '<-2<CR>gv=gv",
+    "vnoremap J :m '>+1<CR>gv=gv"
+  ],
+
+  "search.smartCase": false,
+  "search.exclude": {
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/build": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/.git/**": true,
+    "**/dist/**": true,
+    "**/build/**": true
+  },
+
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "[dart]": {
+    "editor.suggest.insertMode": "insert" ,
+
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.selectionHighlight": false,
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "jsonToDart.avoidDynamicTypes": true,
+  "explorer.confirmPasteNative": false,
+  "update.showReleaseNotes": false,
+  "workbench.editor.empty.hint": "hidden"
+}

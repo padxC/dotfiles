@@ -1,0 +1,65 @@
+[
+  {
+    "key": "ctrl+backspace",
+    "command": "deleteWordLeft",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    // Navigation
+    "key": "ctrl-h",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "ctrl-l",
+    "command": "workbench.action.navigateRight"
+  },
+  {
+    "key": "ctrl-k",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "ctrl-j",
+    "command": "workbench.action.navigateDown"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "acceptSelectedSuggestion",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "space e",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "editorTextFocus && neovim.mode == 'normal'"
+  },
+  {
+    "key": "space s f",
+    "command": "workbench.action.quickOpen",
+    "when": "editorTextFocus && neovim.mode == 'normal'"
+  },
+  {
+    // Send [Space to Neovim (add empty line above)
+    "key": "[ space",
+    "command": "vscode-neovim.send",
+    "args": "[<space>",
+    "when": "editorTextFocus && neovim.mode != 'insert'"
+  },
+  {
+    // Send ]Space to Neovim (add empty line below)
+    "key": "] space",
+    "command": "vscode-neovim.send",
+    "args": "]<space>",
+    "when": "editorTextFocus && neovim.mode != 'insert'"
+  },
+    {
+        "key": "cmd+=",
+        "command": "editor.action.fontZoomIn"
+    },
+    {
+        "key": "cmd+-",
+        "command": "editor.action.fontZoomOut"
+    },
+    {
+        "key": "cmd+0",
+        "command": "editor.action.fontZoomReset"
+    },
+]
