@@ -39,9 +39,24 @@ return {
 			mods = "CTRL",
 			action = wezterm.action.OpenLinkAtMouseCursor,
 		},
+		{
+			event = { Up = { streak = 1, button = "Left" } },
+			mods = "CMD",
+			action = wezterm.action.OpenLinkAtMouseCursor,
+		},
 	},
 
 	keys = {
-		{ key = "Backspace", mods = "CTRL", action = wezterm.action({ SendString = "\x17" }) },
+		{
+			key = "Backspace",
+			mods = "CTRL",
+			action = wezterm.action({ SendString = "\x17" })
+		},
+		-- macOS style: Cmd+Backspace deletes entire line
+		{
+			key = "Backspace",
+			mods = "CMD",
+			action = wezterm.action.SendString("\x15"),
+		},
 	},
 }
